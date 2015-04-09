@@ -13,7 +13,7 @@ Navigation is available to all the pages in the left side bar of the app.  It is
 
   -- Shopping Cart
   
-Storefront:  The Storefront page was built three different ways (all three look the same) to compare performance and to show different ways of performing internationalization.  
+**Storefront:**  The Storefront page was built three different ways (all three look the same) to compare performance and to show different ways of performing internationalization.  
   
   -- Angular Home (default page): Uses JavaScript Remote Objects to access data from salesforce.  Leverages angularJS modules to perform internationalization.
   
