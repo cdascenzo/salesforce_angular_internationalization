@@ -1,0 +1,84 @@
+<div class="container">
+    <div class="row ng-scope">
+        <div class="col-md-12">
+            <h1 class="ng-scope">
+              Angular Demo Cart
+            </h1>
+            <div class="row ng-scope">
+              <!--  Cart Container  -->
+                <div class="alert alert-warning" role="alert" ng-show="ngCart.totalItems() === 0 && orderId === 0" >
+                        Your cart is empty
+                </div>
+
+                <div class="alert alert-warning" role="alert" ng-show="ngCart.totalItems() === 0 && orderId != 0"> 
+                        Your order has been placed and your confirmation number is {{orderId}}
+                </div>
+
+
+                <div class="table-responsive col-lg-12" ng-show="ngCart.totalItems() > 0 ">
+
+                    <table class="table table-striped ngCart cart">
+
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>Quantity</th>
+                                <th>Amount</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr ng-show="ngCart.getTax()">
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>Tax ({{ ngCart.getCart().tax }}%):</th>
+                                <th>{{ ngCart.getTax() | currency }}</th>
+                            </tr>
+                            <tr ng-show="ngCart.getShipping()">
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>Shipping:</th>
+                                <th>{{ ngCart.getShipping() | currency }}</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th>Total:</th>
+                                <th>{{ ngCart.totalCost() | currency }}</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr ng-repeat="item in ngCart.getCart().items track by $index">
+                                <td><span ng-click="ngCart.removeItem($index)" class="glyphicon glyphicon-remove"></span></td>
+                                <td>{{ item.getName() }}</td>
+                                <td><span class="glyphicon glyphicon-minus" ng-class="{'disabled':item.getQuantity()==1}"
+                                          ng-click="item.setQuantity(-1, true)"></span>&nbsp;&nbsp;
+                                    {{ item.getQuantity() | number }}&nbsp;&nbsp;
+                                    <span class="glyphicon glyphicon-plus" ng-click="item.setQuantity(1, true)"></span></td>
+                                <td>{{ item.getPrice() | currency}}</td>
+                                <td>{{ item.getTotal() | currency }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row ng-scope">
+                        <div class="col-md-12 text-right">
+                            <button class ="btn btn-primary" ng-click="checkOut()">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .ngCart.cart span[ng-click] {
+        cursor: pointer;
+    }
+    .ngCart.cart .glyphicon.disabled {
+        color:#aaa;
+    }
+</style>
