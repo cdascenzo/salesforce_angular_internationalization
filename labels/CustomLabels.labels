@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>button_checkout</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>button_checkout</shortDescription>
+        <value>Checkout</value>
+    </labels>
+    <labels>
+        <fullName>field_amount</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_amount</shortDescription>
+        <value>Amount</value>
+    </labels>
+    <labels>
+        <fullName>field_angular_merchandise_name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_angular_merchandise_name</shortDescription>
+        <value>Angular Products StoreFront</value>
+    </labels>
+    <labels>
+        <fullName>field_createddate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_createddate</shortDescription>
+        <value>Created Date</value>
+    </labels>
+    <labels>
+        <fullName>field_description</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_description</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>field_invoice_statement_name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_invoice_statement_name</shortDescription>
+        <value>Order Id</value>
+    </labels>
+    <labels>
+        <fullName>field_merchandise_product_name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_merchandise_product_name</shortDescription>
+        <value>Product Name</value>
+    </labels>
+    <labels>
+        <fullName>field_price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_price</shortDescription>
+        <value>Price</value>
+    </labels>
+    <labels>
+        <fullName>field_quantity</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_quantity</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>field_shipping</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_shipping</shortDescription>
+        <value>Shipping</value>
+    </labels>
+    <labels>
+        <fullName>field_status</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>field_tax</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_tax</shortDescription>
+        <value>Tax</value>
+    </labels>
+    <labels>
+        <fullName>field_total</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_total</shortDescription>
+        <value>Total</value>
+    </labels>
+    <labels>
+        <fullName>field_total_per_product</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_total_per_product</shortDescription>
+        <value>Total Per Product</value>
+    </labels>
+    <labels>
+        <fullName>field_unit_price</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_unit_price</shortDescription>
+        <value>Unit Price</value>
+    </labels>
+    <labels>
+        <fullName>field_units_sold</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>field_units_sold</shortDescription>
+        <value>Units Sold</value>
+    </labels>
+    <labels>
+        <fullName>phrase_empty_cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>phrase_empty_cart</shortDescription>
+        <value>Your cart is empty</value>
+    </labels>
+    <labels>
+        <fullName>phrase_order_confirmation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>phrase_order_confirmation</shortDescription>
+        <value>Your order has been placed and your confirmation number is</value>
+    </labels>
+    <labels>
+        <fullName>tab_angularorders</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>tab_angularorders</shortDescription>
+        <value>Angular Orders</value>
+    </labels>
+    <labels>
+        <fullName>tab_apex_home</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>tab_apex_home</shortDescription>
+        <value>Apex Home</value>
+    </labels>
+    <labels>
+        <fullName>tab_apex_orders</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>tab_apex_orders</shortDescription>
+        <value>Apex Orders</value>
+    </labels>
+    <labels>
+        <fullName>tab_cart</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>tab_cart</shortDescription>
+        <value>Cart</value>
+    </labels>
+    <labels>
+        <fullName>tab_home</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>tab_home</shortDescription>
+        <value>Angular Home</value>
+    </labels>
+    <labels>
+        <fullName>tab_vfhome</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>tab_vfhome</shortDescription>
+        <value>Visualforce Home</value>
+    </labels>
+    <labels>
+        <fullName>tab_vforders</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>tab_vforders</shortDescription>
+        <value>Visualforce Orders</value>
+    </labels>
+    <labels>
+        <fullName>title_angular_home</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>title_angular_home</shortDescription>
+        <value>Angular Products StoreFront: Internationalization Handled in Angular Modules or Javascript Libraries</value>
+    </labels>
+    <labels>
+        <fullName>title_angular_orders</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>title_angular_orders</shortDescription>
+        <value>Angular Orders: Internationalization Handled in Angular Modules or Javascript Libraries</value>
+    </labels>
+    <labels>
+        <fullName>title_apex_home</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>title_apex_home</shortDescription>
+        <value>Apex Home: Internationalization Handled in Remote Action method of Apex Controller</value>
+    </labels>
+    <labels>
+        <fullName>title_apex_orders</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>title_apex_orders</shortDescription>
+        <value>Apex Orders: Internationalization Handled in Remote Action method of Apex Controller</value>
+    </labels>
+    <labels>
+        <fullName>title_vf_home</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>title_vf_home</shortDescription>
+        <value>Visualforce Products StoreFront: Internationalization Handled using Visualforce outputField tags</value>
+    </labels>
+    <labels>
+        <fullName>title_vf_orders</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>title_vf_orders</shortDescription>
+        <value>Visualforce Orders: Internationalization Handled using Visualforce outputField tags</value>
+    </labels>
+</CustomLabels>
