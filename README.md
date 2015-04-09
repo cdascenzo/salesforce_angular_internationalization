@@ -5,8 +5,11 @@ Shopping Cart Demo leveraging several angularJS modules including:
   --
 
 Navigation is available to all the pages in the left side bar of the app.  It is broken up into three sections:
+
 -- Storefront
+
 -- Orders
+
 -- Shopping Cart
   
 Storefront:  The Storefront page was built three different ways (all three look the same) to compare performance and to show different ways of performing internationalization.  
