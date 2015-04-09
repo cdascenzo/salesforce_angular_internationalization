@@ -1,0 +1,200 @@
+<apex:page standardStylesheets="false" applyBodyTag="false" docType="html-5.0" sidebar="false" controller="StoreFrontControllerRM">
+
+   <!-- This is the starting page of the single page app for the storeApp demo.  Apex partials or HTML partials are surfaced in the ui-view=main div below
+        The Angular module angular-ui-router is used to do the routing of the partials.  More info on this module is available on the project github page: https://github.com/angular-ui/ui-router
+        The Angular module ngCart is used to perform the logic for the shopping cart.  More info on this module can be found on the project github page: https://github.com/snapjay/ngcart  
+        The Angular module angular dynamic locale is used to switch the browsers i18n files based on logged in users salesforce locale.  More info on this module can be found on the github project page: https://github.com/lgalfaso/angular-dynamic-locale
+        Moment.js and moment-timezone were used to perform date conversions in the angular prefixed pages.  More information on these libraries can be found here: http://momentjs.com/ 
+        JQuery is used to allow script tags in apex partial pages.  Angular does not recognize a script tag.  
+        Github buttons module was included for nicer looking (styled) buttons in the shopping cart.  These work best with bootstrap which I used in an earlier version of the app -->
+
+
+   <!-- Cascading Sytlesheets -->
+   <apex:stylesheet value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/css/style1.css')}"/>
+   <apex:stylesheet value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/css/common.css')}"/> 
+   <apex:stylesheet value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/css/elements.css')}"/>
+   <apex:stylesheet value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/css/extended.css')}"/>
+   <apex:stylesheet value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/githubButtons/dist/github-buttons.css')}"/>
+
+  <div ng-app="storeApp">  <!-- Angular App declared in app.js  -->
+    <div class="bodyDiv brdPalette brandPrimaryBrd">
+      <table class="outer" width="100%" id="bodyTable" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td id="sidebarCell" class="sidebarCell">
+              <div class="fixed sidebar" id="sidebarDiv">
+                <div class="recentItemModule sidebarModule">
+                  <div class="sidebarModuleHeader brandPrimaryBgr">
+                    <h2 class="brandPrimaryFgr">StoreFront Versions</h2>
+                  </div>
+                  <div class="sidebarModuleBody">
+                    <div class="mruList individualPalette">
+                      <div class="Custom13Block">
+                        <div class="mruItem">
+                          <a class="Custom13Mru" ui-sref="home">
+                            <img src="/s.gif" class="mruIcon"></img>
+                            <span class="mruText">
+                                {!$Label.tab_home}
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="Custom13Block">
+                        <div class="mruItem">
+                          <a class="Custom13Mru" ui-sref="vfhome">
+                            <img src="/s.gif" class="mruIcon"></img>
+                            <span class="mruText">
+                                {!$Label.tab_vfhome}
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="Custom13Block">
+                        <div class="mruItem">
+                          <a class="Custom13Mru" ui-sref="apexhome">
+                            <img src="/s.gif" class="mruIcon"></img>
+                            <span class="mruText">
+                                {!$Label.tab_apex_home}
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recentItemModule sidebarModule">
+                  <div class="sidebarModuleHeader brandPrimaryBgr">
+                    <h2 class="brandPrimaryFgr">Orders Versions</h2>
+                  </div>
+                  <div class="sidebarModuleBody">
+                    <div class="mruList individualPalette">
+                      <div class="Custom18Block">
+                        <div class="mruItem">
+                          <a class="Custom18Mru" ui-sref="order">
+                            <img src="/s.gif" class="mruIcon"></img>
+                            <span class="mruText">
+                                {!$Label.tab_angularorders}
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="Custom18Block">
+                        <div class="mruItem">
+                          <a class="Custom18Mru" ui-sref="vforder">
+                            <img src="/s.gif" class="mruIcon"></img>
+                            <span class="mruText">
+                                {!$Label.tab_vforders}
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="Custom18Block">
+                        <div class="mruItem">
+                          <a class="Custom18Mru" ui-sref="apexorder">
+                            <img src="/s.gif" class="mruIcon"></img>
+                            <span class="mruText">
+                                {!$Label.tab_apex_orders}
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recentItemModule sidebarModule">
+                  <div class="sidebarModuleHeader brandPrimaryBgr">
+                    <h2 class="brandPrimaryFgr">Cart Versions</h2>
+                  </div>
+                  <div class="sidebarModuleBody">
+                    <div class="mruList individualPalette">
+                      <div class="Custom93Block">
+                        <div class="mruItem">
+                          <a class="Custom93Mru" ui-sref="vfcart">
+                            <img src="/s.gif" class="mruIcon"></img>
+                            <span class="mruText">
+                                {!$Label.tab_cart}
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="sidebarModuleBody" ng-Controller="cartCtrl">
+                    <div class="sidebarModuleBodyNoHeader">
+                      <a style="padding: 5px 0 0 0; width:150px" ui-sref="vfcart">
+                        <ngcart-summary class="ng-isolate-scope">                     <!-- Angular Directive in ngCart module -->
+                        </ngcart-summary>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td> 
+            <td class="oRight" id="bodyCell" >
+              <div class="apexp" ui-view="main" ></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+    
+    <!-- Salesforce Remote Objects -->
+    <apex:remoteObjects >
+        <apex:remoteObjectModel name="Merchandise__c" jsShorthand="merchandise" fields="Name,Id,Description__c,Price__c,Total_Inventory__c"/>
+        <apex:remoteObjectModel name="Invoice_Statement__c" jsShorthand="invoice" fields="Name,Id,CreatedDate,Description__c,Status__c,CreatedById"/>
+        <apex:remoteObjectModel name="Line_Item__c" jsShorthand="line" fields="Name,Id,Invoice_Statement__c,Merchandise__c,Total_Per_Product__c,Unit_Price__c,Units_Sold__c"></apex:remoteObjectModel>
+    </apex:remoteObjects>
+
+    <!-- Angular JavaScript Files and Helper Modules  -->
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/jquery/dist/jquery.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/angular/angular.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/ngcart/dist/ngCart.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/dynamicLocale/tmhDynamicLocale.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/githubButtons/dist/github-buttons.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/angularUiRouter/release/angular-ui-router.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/moment/moment.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/moment/moment-timezone-all-years.js')}"/>
+    
+    <!-- Main app (storeApp) JavaScript file -->
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/app.js')}"/>
+    
+    <!-- Container Classes  -->
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/product-entity.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/invoice-entity.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/line-entity.js')}"/>
+    
+    <!-- storeApp Services -->
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/services/store-services.js')}"/>
+    
+    <!-- storeApp Controllers  -->
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/controllers/store-controller.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/controllers/apexstore-controller.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/controllers/vfstore-controller.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/controllers/cart-controller.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/controllers/order-controller.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/controllers/apexorder-controller.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/controllers/vforder-controller.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/controllers/lineitem-controller.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/controllers/vflineitem-controller.js')}"/>
+    
+    
+    <!-- Static HTML Pages and @remoteAction Apex Controller Methods -->
+    <script>
+        var staticItems = {
+            'mainHTML' : "{!URLFOR($Resource.mainHTML2)}",
+            'cartHTML' : "{!URLFOR($Resource.cartHTML2)}",
+            'orderHTML' : "{!URLFOR($Resource.orderHTML2)}",
+            'summaryHTML' : "{!URLFOR($Resource.summaryHTML2)}",
+            'addtocartHTML' : "{!URLFOR($Resource.addtocartHTML2)}",         
+            'saveCart':'{!$RemoteAction.StoreFrontControllerRM.saveCart}',
+            'getUserProfile':'{!$RemoteAction.StoreFrontControllerRM.getUserProfile}',
+            'getLineItems':'{!$RemoteAction.StoreFrontControllerRM.getLineItems}',
+            'getAllOrders':'{!$RemoteAction.StoreFrontControllerRM.getAllOrders}',
+            'getAllMerchandise':'{!$RemoteAction.StoreFrontControllerRM.getAllMerchandise}'
+            };
+        
+    </script>
+</apex:page>
