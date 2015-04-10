@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Angular Demo --></label>
+        <name>Angular_Demo</name>
+    </customApplications>
+    <customLabels>
+        <label>Echa Un Vistazo</label>
+        <name>button_checkout</name>
+    </customLabels>
+    <customLabels>
+        <label>Cantidad</label>
+        <name>field_amount</name>
+    </customLabels>
+    <customLabels>
+        <label>Productos Angular Storefront</label>
+        <name>field_angular_merchandise_name</name>
+    </customLabels>
+    <customLabels>
+        <label>Fecha de Creación</label>
+        <name>field_createddate</name>
+    </customLabels>
+    <customLabels>
+        <label>Descripción</label>
+        <name>field_description</name>
+    </customLabels>
+    <customLabels>
+        <label>ID del Pedido</label>
+        <name>field_invoice_statement_name</name>
+    </customLabels>
+    <customLabels>
+        <label>Nombre del Producto</label>
+        <name>field_merchandise_product_name</name>
+    </customLabels>
+    <customLabels>
+        <label>Precio</label>
+        <name>field_price</name>
+    </customLabels>
+    <customLabels>
+        <label>Cantidad</label>
+        <name>field_quantity</name>
+    </customLabels>
+    <customLabels>
+        <label>Envío</label>
+        <name>field_shipping</name>
+    </customLabels>
+    <customLabels>
+        <label>Estado</label>
+        <name>field_status</name>
+    </customLabels>
+    <customLabels>
+        <label>Impuesto</label>
+        <name>field_tax</name>
+    </customLabels>
+    <customLabels>
+        <label>Total</label>
+        <name>field_total</name>
+    </customLabels>
+    <customLabels>
+        <label>Total por Producto</label>
+        <name>field_total_per_product</name>
+    </customLabels>
+    <customLabels>
+        <label>Precio Unitario</label>
+        <name>field_unit_price</name>
+    </customLabels>
+    <customLabels>
+        <label>Unidades Vendidas</label>
+        <name>field_units_sold</name>
+    </customLabels>
+    <customLabels>
+        <label>Su cesta está vacía</label>
+        <name>phrase_empty_cart</name>
+    </customLabels>
+    <customLabels>
+        <label>Su pedido ha sido realizado y el número de confirmación es</label>
+        <name>phrase_order_confirmation</name>
+    </customLabels>
+    <customLabels>
+        <label>órdenes angular</label>
+        <name>tab_angularorders</name>
+    </customLabels>
+    <customLabels>
+        <label>Casa Apex</label>
+        <name>tab_apex_home</name>
+    </customLabels>
+    <customLabels>
+        <label>órdenes Apex</label>
+        <name>tab_apex_orders</name>
+    </customLabels>
+    <customLabels>
+        <label>Carro</label>
+        <name>tab_cart</name>
+    </customLabels>
+    <customLabels>
+        <label>Angular Casa</label>
+        <name>tab_home</name>
+    </customLabels>
+    <customLabels>
+        <label>Casa Visualforce</label>
+        <name>tab_vfhome</name>
+    </customLabels>
+    <customLabels>
+        <label>órdenes Visualforce</label>
+        <name>tab_vforders</name>
+    </customLabels>
+    <customLabels>
+        <label>Productos angular Storefront : Internacionalización manejado en los módulos angulares o JavaScript Bibliotecas</label>
+        <name>title_angular_home</name>
+    </customLabels>
+    <customLabels>
+        <label>Órdenes angular : Internacionalización manejado en los módulos angulares o JavaScript Bibliotecas</label>
+        <name>title_angular_orders</name>
+    </customLabels>
+    <customLabels>
+        <label>Casa Apex : Internacionalización manejado en el método de Acción alejado del regulador Apex</label>
+        <name>title_apex_home</name>
+    </customLabels>
+    <customLabels>
+        <label>Órdenes Apex : Internacionalización manejan en método Acción alejado del regulador Apex</label>
+        <name>title_apex_orders</name>
+    </customLabels>
+    <customLabels>
+        <label>Visualforce Productos Storefront : Internacionalización Manejó el uso de etiquetas Visualforce outputField</label>
+        <name>title_vf_home</name>
+    </customLabels>
+    <customLabels>
+        <label>Órdenes Visualforce : usando etiquetas Visualforce outputField Internacionalización manejadas</label>
+        <name>title_vf_orders</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- Demo Start Page --></label>
+        <name>Demo_Start_Page</name>
+    </customTabs>
+</Translations>
