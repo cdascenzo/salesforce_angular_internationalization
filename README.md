@@ -6,7 +6,7 @@ Important notes:
 * Multi-Currency is enabled in the salesforce org
 * Salesforce translation workbench was leveraged for providing language translations (mex-spanish, french)
 
-## installation instructions
+## Installation instructions
 
 * This repo contains an unmanaged package that was exported using workbench.  Download the project as a zip and import it into salesforce using https://workbench.developerforce.com or the Force.com IDE. 
   * Important - remove the folder Unzipped Static Resources from the zip before uploading.  This is folder of all the angular, HTML, and JavaScript code for reference that was not zipped and exported via the package so it may fail your upload attempt.
