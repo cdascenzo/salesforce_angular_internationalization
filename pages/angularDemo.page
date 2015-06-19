@@ -159,7 +159,7 @@
     <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/moment/moment-timezone-all-years.js')}"/>
     
     <!-- Main app (storeApp) JavaScript file -->
-    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/app.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/app.js')}"/>
     
     <!-- Container Classes  -->
     <apex:includeScript value="{!URLFOR($Resource.storeDemoRM, 'storeDemoRM/js/product-entity.js')}"/>
