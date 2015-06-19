@@ -11,7 +11,7 @@ Important notes:
 * This repo contains an unmanaged package that was exported using workbench.  Download the project as a zip and import it into salesforce using https://workbench.developerforce.com or the Force.com IDE. 
   * Important - remove the folder Unzipped Static Resources and the README.md file from the zip before uploading (this means you will need to rezip).  The Unzipped Static Resource folder is folder of all the angular, HTML, and JavaScript code for reference that was not zipped and exported via the package so it may fail your upload attempt.
   * If using workbench, login to the org and select Deploy from the Migration tab.  Browse to select the zip zile and hit next.  Once the file uploads, you can click the deploy button.  Feel free to run a check only on the file first.  
-  * If you get errors during the upload process in workbench, it is most likely because you have not enabled multi-currency in the org or you have not enabled the translation workbench.
+  * If you get errors during the deploy process in workbench, it is most likely because you have not enabled multi-currency in the org or you have not enabled the translation workbench.
 
 ## angularJS modules
   
