@@ -15,7 +15,7 @@ Important notes:
   * Navigate back to the local copy of the unpacked zip you downloaded from Github.  Now, delete the zip you just uploaded (storeDemoRM), delete the folder called Unzipped-Static-Resources, and delete the README.md file from the salesforce_angular_internationalization folder.
   * Rezip this folder (salesforce_angular_internationalization).
   * Open workbench in a browser window, login to the salesforce org through workbench and select Deploy from the Migration tab.
-  * Browse to select the zip file you just created (salesforce_angular_internationalization)  and hit next.  Once the file uploads, you can click the deploy button.  Feel free to run a check only on the file first.  
+  * Browse to select the zip file you just created (salesforce_angular_internationalization), check the box for "Single Package"  and hit next.  Once the file uploads, you can click the deploy button.  Feel free to run a check only on the file first.  
   * If you get errors during the deploy process in workbench, it is most likely because you have not enabled multi-currency in the org or you have not enabled the translation workbench.
 
 ## angularJS modules
