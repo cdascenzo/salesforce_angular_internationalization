@@ -11,7 +11,7 @@ Important notes:
 * This repo contains an unmanaged package that was exported using workbench.  Download the project as a zip and import it into salesforce using https://workbench.developerforce.com or the Force.com IDE. The below directions are for using workbench.
   * Download the zip from the Github repo and unzip it locally.  Delete the downloaded zip (salesforce_angular_internationalization).
   * Open the salesforce_angular_internationalization folder, and now zip the folder called Unzipped-Static-Resources.  Make sure to name this new zip storeDemoRM as this is what is expected in the code.  This will contain all the raw CSS and JavaScript files needed to run the app.
-  * Login to your salesforce development org and upload this new zip (storeDemoRM) as a static resource.
+  * Login to your salesforce development org and upload this new zip (storeDemoRM) as a static resource.  Make sure to name the static resource storeDemoRM also.
   * Navigate back to the local copy of the unpacked zip you downloaded from Github.  Now, delete the zip you just uploaded (storeDemoRM), delete the folder called Unzipped-Static-Resources, and delete the README.md file from the salesforce_angular_internationalization folder.
   * Rezip this folder (salesforce_angular_internationalization).
   * Open workbench in a browser window, login to the salesforce org through workbench and select Deploy from the Migration tab.
