@@ -6,6 +6,10 @@ Important notes:
 * Multi-Currency is enabled in the salesforce org
 * Salesforce translation workbench was leveraged for providing language translations (mex-spanish, french)
 
+## Trial Org
+* You can spin up a trial org here: https://pacific-inlet-1581.herokuapp.com/
+* It's the old signup sheet - the org will still spin up off it
+
 ## Installation instructions
 
 * This repo contains an unmanaged package that was exported using workbench.  Download the project as a zip and import it into salesforce using https://workbench.developerforce.com or the Force.com IDE. The below directions are for using workbench.
